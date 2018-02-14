@@ -1,0 +1,282 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/cwu72/Desktop/Lab-5/simulation/modelsim
+vcontrol
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+I[]ROzfdMF6CCD1?dOf0kX1
+VkN5Jbjk^OUCIgf4SSooKN1
+S1
+Z2 d/home/cwu72/Desktop/Lab-5/simulation/modelsim
+w1518585405
+8/home/cwu72/Desktop/Lab-5/Control.sv
+F/home/cwu72/Desktop/Lab-5/Control.sv
+L0 4
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 -O0
+!i10b 1
+!s100 Oom:>62I55O1J4KgfY<Ya1
+!s105 Control_sv_unit
+!s85 0
+!s108 1518588962.740583
+!s107 /home/cwu72/Desktop/Lab-5/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Control.sv|
+!s101 -O0
+vfull_adder
+R1
+IH9HBM4MVkP4?Q@Gn5jk413
+VIDUmQozS1lOEf8?::WPSO3
+Z6 !s105 adder_sv_unit
+S1
+R2
+Z7 w1518585728
+Z8 8/home/cwu72/Desktop/Lab-5/adder.sv
+Z9 F/home/cwu72/Desktop/Lab-5/adder.sv
+L0 31
+R3
+r1
+31
+Z10 !s108 1518588962.897914
+Z11 !s107 /home/cwu72/Desktop/Lab-5/adder.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/adder.sv|
+R4
+R5
+!i10b 1
+!s100 g7:1lz:1fniTm=Fk7nZ`;3
+!s85 0
+!s101 -O0
+vHexDriver
+R1
+IAYXNj=jz^8PBW5>OJDV<;2
+V2G6=_O>lD=3U`GOXc0nkW3
+S1
+R2
+Z13 w1518585132
+8/home/cwu72/Desktop/Lab-5/HexDriver.sv
+F/home/cwu72/Desktop/Lab-5/HexDriver.sv
+L0 2
+R3
+r1
+31
+R4
+R5
+n@hex@driver
+!i10b 1
+!s100 ZDFmQB1EHGSkD3fWaL]673
+!s105 HexDriver_sv_unit
+!s85 0
+!s108 1518588962.563922
+!s107 /home/cwu72/Desktop/Lab-5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/HexDriver.sv|
+!s101 -O0
+vmultiplier
+R1
+Ien]HbD:>D0L<oe<h<bOO`2
+VCJmnB0kTgNgSRBa;5WUEY1
+S1
+R2
+w1518588772
+8/home/cwu72/Desktop/Lab-5/multiplier.sv
+F/home/cwu72/Desktop/Lab-5/multiplier.sv
+L0 3
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 be6m5[oMT5]kaj`S0fRb?3
+!s105 multiplier_sv_unit
+!s85 0
+!s108 1518588963.249212
+!s107 /home/cwu72/Desktop/Lab-5/multiplier.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/multiplier.sv|
+!s101 -O0
+vreg_8
+R1
+IjDg[eSoGV`YKAnTbO9JC72
+VLUYDLUY?eZ]T5>V:QG?]K3
+S1
+R2
+R13
+8/home/cwu72/Desktop/Lab-5/Reg_8.sv
+F/home/cwu72/Desktop/Lab-5/Reg_8.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 4H^CC?jTA0Vi=]z6]k8:`0
+!s105 Reg_8_sv_unit
+!s85 0
+!s108 1518588962.418425
+!s107 /home/cwu72/Desktop/Lab-5/Reg_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Reg_8.sv|
+!s101 -O0
+vregister_unit
+R1
+IWn9jkG=<OPQ29I6QOb1DP3
+VBiDBlWP9YaA1GLL?FWGUV2
+S1
+R2
+R13
+8/home/cwu72/Desktop/Lab-5/Register_unit.sv
+F/home/cwu72/Desktop/Lab-5/Register_unit.sv
+L0 2
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 jCA;4TE?[DQajfd4j>ZMV0
+!s105 Register_unit_sv_unit
+!s85 0
+!s108 1518588963.126343
+!s107 /home/cwu72/Desktop/Lab-5/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Register_unit.sv|
+!s101 -O0
+vsign_extend_adder
+R1
+II<]U<SLG<;DP<EB6<^Hdf0
+VMU;Z:5Z@J9YoW@Akl7l;>3
+R6
+S1
+R2
+R7
+R8
+R9
+L0 1
+R3
+r1
+31
+R10
+R11
+R12
+R4
+R5
+!i10b 1
+!s100 mQBIND[L8mMPB[MN5>>=O0
+!s85 0
+!s101 -O0
+vsync
+R1
+IP?7i0VKgb9_Pj3j?@N8JM1
+VDY37AGl6YeZi>Nz]67AGE0
+Z14 !s105 Synchronizers_sv_unit
+S1
+R2
+R13
+Z15 8/home/cwu72/Desktop/Lab-5/Synchronizers.sv
+Z16 F/home/cwu72/Desktop/Lab-5/Synchronizers.sv
+L0 4
+R3
+r1
+31
+Z17 !s108 1518588962.158469
+Z18 !s107 /home/cwu72/Desktop/Lab-5/Synchronizers.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Synchronizers.sv|
+R4
+R5
+!i10b 1
+!s100 ;IN=k8=E>AUI7?KA3>Xd12
+!s85 0
+!s101 -O0
+vsync_r0
+R1
+I]cGHM107>>b0S4ikEM@aC1
+VMZaa5F6HXTWE1Gh5J:zVS3
+R14
+S1
+R2
+R13
+R15
+R16
+L0 18
+R3
+r1
+31
+R17
+R18
+R19
+R4
+R5
+!i10b 1
+!s100 G_aRcObAZM?RT8Y8iWSf;3
+!s85 0
+!s101 -O0
+vsync_r1
+R1
+IML>m_84khT6glTE3`P[W02
+VCZMQ_3:a@hlC9oHD;iQnm0
+R14
+S1
+R2
+R13
+R15
+R16
+L0 39
+R3
+r1
+31
+R17
+R18
+R19
+R4
+R5
+!i10b 1
+!s100 OZC_cDDIZQa<5JR4:G2II0
+!s85 0
+!s101 -O0
+vtestbench
+R1
+!i10b 1
+!s100 XG04N49mPN[8T22m95zjF1
+I`Z]kYB8lVR@aYShQfgf0@1
+VhGfW:390DM[oDMzegDH9`2
+!s105 testbemch_sv_unit
+S1
+R2
+w1518588300
+8/home/cwu72/Desktop/Lab-5/testbemch.sv
+F/home/cwu72/Desktop/Lab-5/testbemch.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1518588963.382128
+!s107 /home/cwu72/Desktop/Lab-5/testbemch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/testbemch.sv|
+!s101 -O0
+R4
+R5
+vxfp
+R1
+IjHo;H3o9EJ7ST=R0Hd1R=0
+V4M@=^H<_GLUL`_Wd:d_L91
+S1
+R2
+R13
+8/home/cwu72/Desktop/Lab-5/xfp.sv
+F/home/cwu72/Desktop/Lab-5/xfp.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 `=22Uc2]10TM67;:_3ZcN0
+!s105 xfp_sv_unit
+!s85 0
+!s108 1518588962.000029
+!s107 /home/cwu72/Desktop/Lab-5/xfp.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/xfp.sv|
+!s101 -O0

@@ -1,0 +1,95 @@
+# ERROR: No extended dataflow license exists
+# do Multiplier_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/xfp.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module xfp
+# 
+# Top level modules:
+# 	xfp
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/Synchronizers.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
+# 
+# Top level modules:
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/Reg_8.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_8
+# 
+# Top level modules:
+# 	reg_8
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/HexDriver.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HexDriver
+# 
+# Top level modules:
+# 	HexDriver
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/Control.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/adder.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend_adder
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	sign_extend_adder
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/Register_unit.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_unit
+# 
+# Top level modules:
+# 	register_unit
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/multiplier.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module multiplier
+# 
+# Top level modules:
+# 	multiplier
+# 
+# vlog -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 {/home/cwu72/Desktop/Lab-5/testbemch.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.multiplier
+# Loading work.register_unit
+# Loading work.reg_8
+# Loading work.sign_extend_adder
+# Loading work.full_adder
+# Loading work.control
+# Loading work.xfp
+# Loading work.HexDriver
+# Loading work.sync
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# ** Warning: (vsim-8315) /home/cwu72/Desktop/Lab-5/Control.sv(27): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/cwu72/Desktop/Lab-5/Control.sv(27): No condition is true in the unique/priority if/case statement.

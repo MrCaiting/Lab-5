@@ -5,7 +5,7 @@ module multiplier (input logic  Clk,            // Internal
                                 ClearA_LoadB,   // Push button 2
                                 Execute,        // Push button 3
                   input  logic [7:0]  SW,
-                  output logic [3:0]  LED,
+                  output logic  X,
                   output logic [7:0]  Aval,
                                       Bval,
                   output logic [6:0]  AhexL,
@@ -15,12 +15,13 @@ module multiplier (input logic  Clk,            // Internal
 
 	 //local logic variables go here
 	 logic Reset_SH, ClearA_LoadB_SH, Execute_SH;
-	 logic X, opA, M, Shift_En, Add, Sub, Clr_Ld, Clear;
+	 logic opA, opB, Shift_En, Add, Sub, Clr_Ld, Clear;
 	 logic [7:0] A, B, SW_S;
     logic [8:0] result;
 
 
 	 //We can use the "assign" statement to do simple combinational logic
+	 assign M = opB;
 	 assign Aval = A;
 	 assign Bval = B;
 
@@ -37,7 +38,7 @@ module multiplier (input logic  Clk,            // Internal
                         .A_In(X),
                         .B_In(opA),
                         .A_out(opA),
-                        .B_out(M),
+                        .B_out(opB),
                         .A(A),
                         .B(B) );
 
@@ -48,6 +49,7 @@ module multiplier (input logic  Clk,            // Internal
                                   .ClA_LdB(ClearA_LoadB_SH),
                                   .Execute(Execute_SH),
                                   .Shift_En,
+											 .M(M),
                                   .Add,
                                   .Sub,
                                   .Clr_Ld,

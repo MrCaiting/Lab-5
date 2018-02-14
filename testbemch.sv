@@ -21,7 +21,7 @@ logic [6:0] AhexL,
 
 // Instantiating the DUT
 // Make sure the module and signal names match with those in your design
-Multiplier multiplier0(.*);
+multiplier multiplier0(.*);
 
 // Toggle the clock
 // #1 means wait for a delay of 1 timeunit
@@ -67,10 +67,10 @@ SW = 8'b11000101;	// Specify SW
 #2 Execute = 0;	// begin our first calculation -59*7
 #40 Execute = 1; // togle Execute
 
-#32 SW = 8'00000111;
+#32 SW = 8'b00000111;
 #2 ClearA_LoadB = 0;	// Toggle LoadB
 #2 ClearA_LoadB = 1; // now the register B becomes 00000111
-#2 SW = 8'00111011; // NOW THE multiplier is 59
+#2 SW = 8'b00111011; // NOW THE multiplier is 59
 #2 Execute = 0; // we now start the second computation:7*59
 #9 Execute =1;
 
