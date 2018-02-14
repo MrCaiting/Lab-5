@@ -90,6 +90,7 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 1000 ns
+# run 10000 ns
 # ** Warning: (vsim-8315) /home/cwu72/Desktop/Lab-5/Control.sv(27): No condition is true in the unique/priority if/case statement.
 # ** Warning: (vsim-8315) /home/cwu72/Desktop/Lab-5/Control.sv(27): No condition is true in the unique/priority if/case statement.
+#           2 errors(s) detected you dumbass. Go home and fuck yourself

@@ -82,16 +82,14 @@ ErrorCnt++;
 #2 Execute = 0;	// begin our first calculation -59*-7
 #40 Execute = 1; // togle Execute
 
-<<<<<<< HEAD
 if(Aval != 8'b00000001)
 ErrorCnt++;
 if(Bval != 8'b10011101)
 ErrorCnt++;
 
-#32 SW = 8'00000111;
-=======
+
 #32 SW = 8'b00000111;
->>>>>>> 8afaf6050ed967b5b679db9ac31d9f766fc33723
+
 #2 ClearA_LoadB = 0;	// Toggle LoadB
 #2 ClearA_LoadB = 1; // now the register B becomes 00000111
 #2 SW = 8'b00111011; // NOW THE multiplier is 59
