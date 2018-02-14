@@ -9,7 +9,7 @@ logic A8, BB8;
 logic cout;
 
 
-assign BB = (B^{4{fn}});
+assign BB = (B^{8{fn}});
 assign A8 = A[7];
 assign BB8 = BB[7];
 

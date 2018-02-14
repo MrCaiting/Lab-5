@@ -15,7 +15,7 @@ module multiplier (input logic  Clk,            // Internal
 
 	 //local logic variables go here
 	 logic Reset_SH, ClearA_LoadB_SH, Execute_SH;
-	 logic X, opA, M, Shift_En;
+	 logic X, opA, M, Shift_En, Add, Sub, Clr_Ld, Clear;
 	 logic [7:0] A, B, SW_S;
    logic [8:0] result;
 
@@ -25,7 +25,7 @@ module multiplier (input logic  Clk,            // Internal
 	 assign Bval = B;
 
 	 //Instantiation of the double register module
-	 register_unit    reg_unit (
+	register_unit    reg_unit (
                         .Clk(Clk),
                         .Reset_A(Reset_SH | Clear),
                         .Reset_B(Reset_SH),
@@ -41,8 +41,9 @@ module multiplier (input logic  Clk,            // Internal
                         .A(A),
                         .B(B) );
 
+  sign_extend_adder    ader_unit(.Fn(Sub), .A , .B(SW), .s(result));
 
-	 control          control_unit (.Clk(Clk),
+	control          control_unit (.Clk(Clk),
                                   .Reset_A(Reset_SH),
                                   .ClA_LdB(ClearA_LoadB_SH),
                                   .Execute(Execute_SH),
@@ -52,19 +53,23 @@ module multiplier (input logic  Clk,            // Internal
                                   .Clr_Ld,
                                   .Clear);
 
-	 HexDriver        HexAL (
+  xfp              x_Flip_Flop(.Clk(Clk),
+                              .Load(Add),
+                              .Clear(Reset_SH | Clear)),
+                              .D(result[8]),
+                              .Q(X));
+
+	HexDriver        HexAL (
                         .In0(A[3:0]),
                         .Out0(AhexL) );
-	 HexDriver        HexBL (
+	HexDriver        HexBL (
                         .In0(B[3:0]),
                         .Out0(BhexL) );
 
-	 //When you extend to 8-bits, you will need more HEX drivers to view upper nibble of registers, for now set to 0
-   //UPDATE: In oder to have the Hex display work correctly, we modify the input for the hex display
-	 HexDriver        HexAU (
+	HexDriver        HexAU (
                         .In0(A[7:4]),
                         .Out0(AhexU) );
-	 HexDriver        HexBU (
+	HexDriver        HexBU (
                        .In0(B[7:4]),
                         .Out0(BhexU) );
 

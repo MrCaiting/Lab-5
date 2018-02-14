@@ -1,6 +1,7 @@
 module xfp(
           input logic Clk,
-          input logic clear,
+          input logic Load,
+          input logic Clear,
           input logic D,
           output logic Q
           );
@@ -8,10 +9,13 @@ module xfp(
       always_ff @ (posedge Clk)
       begin
 
-        if (clear)
+        if (Clear)
         Q <= 1'b0;
         else
-        Q <= D;
-        end
+          if (Load)
+            Q <= D;
+          else
+            Q <= Q;
+      end
 
 endmodule

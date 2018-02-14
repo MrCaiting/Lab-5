@@ -160,10 +160,10 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Clr_Ld = 1'b0;
             Clear = 1'b0;
             if (M)
-              Sub = 1'b1;
+              Add = 1'b1;
             else
-              SUb = 1'b0;
-            Add = 1'b0;
+              Add = 1'b0;
+            Sub = 1'b1;
             Shift_En = 1'b0;
           end
 
@@ -175,7 +175,7 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b1;
           end
-          
+
         L:  // The last holding state before stepping into the new computation circle
           begin
             Clr_Ld = 1'b0;
