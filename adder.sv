@@ -6,6 +6,7 @@ module sign_extend_adder (input Fn,
 logic c0, c1, c2, c3, c4, c5, c6, c7;
 logic [7:0] BB;
 logic A8, BB8;
+logic cout;
 
 
 assign BB = (B^{4{fn}});
@@ -22,7 +23,7 @@ full_adder FA4(.x(A[4]), .y(BB[4]), .cin(c3), .s(s[4]), .c(c4));
 full_adder FA5(.x(A[5]), .y(BB[5]), .cin(c4), .s(s[5]), .c(c5));
 full_adder FA6(.x(A[6]), .y(BB[6]), .cin(c5), .s(s[6]), .c(c6));
 full_adder FA7(.x(A[7]), .y(BB[7]), .cin(c6), .s(s[7]), .c(c7));
-full_adder FA8(.x(A8),   .y(BB8),   .cin(c7), .s(s[8]), .c(  ));
+full_adder FA8(.x(A8),   .y(BB8),   .cin(c7), .s(s[8]), .c(cout));
 
 endmodule
 
