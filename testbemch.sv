@@ -106,8 +106,7 @@ ErrorCnt++;
 $display("-59*7 Bval error ");
 end
 
-#32 SW = 8'00000111;
-=======
+
 #32 SW = 8'b00000111;
 
 #2 ClearA_LoadB = 0;	// Toggle LoadB

@@ -22,7 +22,7 @@ Z5 !s92 -sv -work work +incdir+/home/cwu72/Desktop/Lab-5 -O0
 !s100 Oom:>62I55O1J4KgfY<Ya1
 !s105 Control_sv_unit
 !s85 0
-!s108 1518590952.438832
+!s108 1518591701.420598
 !s107 /home/cwu72/Desktop/Lab-5/Control.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Control.sv|
 !s101 -O0
@@ -40,7 +40,7 @@ L0 31
 R3
 r1
 31
-Z10 !s108 1518590952.524726
+Z10 !s108 1518591701.525151
 Z11 !s107 /home/cwu72/Desktop/Lab-5/adder.sv|
 Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/adder.sv|
 R4
@@ -69,7 +69,7 @@ n@hex@driver
 !s100 ZDFmQB1EHGSkD3fWaL]673
 !s105 HexDriver_sv_unit
 !s85 0
-!s108 1518590952.352741
+!s108 1518591701.340877
 !s107 /home/cwu72/Desktop/Lab-5/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/HexDriver.sv|
 !s101 -O0
@@ -92,7 +92,7 @@ R5
 !s100 lZU@1Xkh0c@NAO@SWJfo81
 !s105 multiplier_sv_unit
 !s85 0
-!s108 1518590952.718437
+!s108 1518591701.740529
 !s107 /home/cwu72/Desktop/Lab-5/multiplier.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/multiplier.sv|
 !s101 -O0
@@ -115,7 +115,7 @@ R5
 !s100 4H^CC?jTA0Vi=]z6]k8:`0
 !s105 Reg_8_sv_unit
 !s85 0
-!s108 1518590952.256769
+!s108 1518591701.252662
 !s107 /home/cwu72/Desktop/Lab-5/Reg_8.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Reg_8.sv|
 !s101 -O0
@@ -138,7 +138,7 @@ R5
 !s100 jCA;4TE?[DQajfd4j>ZMV0
 !s105 Register_unit_sv_unit
 !s85 0
-!s108 1518590952.632369
+!s108 1518591701.656059
 !s107 /home/cwu72/Desktop/Lab-5/Register_unit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Register_unit.sv|
 !s101 -O0
@@ -179,7 +179,7 @@ L0 4
 R3
 r1
 31
-Z17 !s108 1518590952.099492
+Z17 !s108 1518591701.072374
 Z18 !s107 /home/cwu72/Desktop/Lab-5/Synchronizers.sv|
 Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/Synchronizers.sv|
 R4
@@ -237,13 +237,13 @@ R5
 vtestbench
 R1
 !i10b 1
-!s100 6n3eJDQE[7ZW97?5O=GLZ0
-IZzmf:;@BmS]o81_@<BV6?3
+!s100 0djEL>KRd<mcKZ_ZnDABz1
+IQ`G>Ob?Y:gh=EG9APOOi41
 VhGfW:390DM[oDMzegDH9`2
 !s105 testbemch_sv_unit
 S1
 R2
-w1518590930
+w1518591677
 8/home/cwu72/Desktop/Lab-5/testbemch.sv
 F/home/cwu72/Desktop/Lab-5/testbemch.sv
 L0 1
@@ -251,7 +251,7 @@ R3
 r1
 !s85 0
 31
-!s108 1518590952.799045
+!s108 1518591701.832646
 !s107 /home/cwu72/Desktop/Lab-5/testbemch.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/testbemch.sv|
 !s101 -O0
@@ -276,7 +276,7 @@ R5
 !s100 `=22Uc2]10TM67;:_3ZcN0
 !s105 xfp_sv_unit
 !s85 0
-!s108 1518590951.988675
+!s108 1518591700.960831
 !s107 /home/cwu72/Desktop/Lab-5/xfp.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+/home/cwu72/Desktop/Lab-5|/home/cwu72/Desktop/Lab-5/xfp.sv|
 !s101 -O0
