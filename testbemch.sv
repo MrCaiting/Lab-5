@@ -57,9 +57,15 @@ SW = 8'b11000101;	// Specify SW
 #40 Execute = 1; // togle Execute
 
 if(Aval != 8'b11111110)
+begin
 ErrorCnt++;
+$display("-59*7 Aval error ");
+end
 if(Bval != 8'b01100011)
+begin
 ErrorCnt++;
+$display("-59*7 Bval error ");
+end
 
 
 
@@ -71,9 +77,15 @@ ErrorCnt++;
 #40 Execute = 1; // togle Execute
 
 if(Aval != 8'b11111110)
+begin
 ErrorCnt++;
+$display("7*-59 Aval error ");
+end
 if(Bval != 8'b01100011)
+begin
 ErrorCnt++;
+$display("-59*7 Bval error ");
+end
 
 #2 ClearA_LoadB = 0;	// Toggle LoadB
 #2 ClearA_LoadB = 1; // now the register B becomes 11000101
@@ -82,12 +94,20 @@ ErrorCnt++;
 #2 Execute = 0;	// begin our first calculation -59*-7
 #40 Execute = 1; // togle Execute
 
+
 if(Aval != 8'b00000001)
+begin
 ErrorCnt++;
+$display("-59*-7 Aval error ");
+end
 if(Bval != 8'b10011101)
+begin
 ErrorCnt++;
+$display("-59*7 Bval error ");
+end
 
-
+#32 SW = 8'00000111;
+=======
 #32 SW = 8'b00000111;
 
 #2 ClearA_LoadB = 0;	// Toggle LoadB
@@ -97,15 +117,21 @@ ErrorCnt++;
 #9 Execute =1;
 
 if(Aval != 8'b00000001)
+begin
 ErrorCnt++;
+$display("59*7 Aval error ");
+end
 if(Bval != 8'b10011101)
+begin
 ErrorCnt++;
+$display("59*7 Bval error ");
+end
 
 if(ErrorCnt == 0)
 $display("success!");
 
 else
-$display("%d errors(s) detected you dumbass. Go home and fuck yourself", ErrorCnt);
+$display("%d errors(s) detected you fucking dick sucker dumbass. Go home and fuck yourself", ErrorCnt);
 
 
 
