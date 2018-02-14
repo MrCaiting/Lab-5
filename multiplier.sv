@@ -31,7 +31,7 @@ module multiplier (input logic  Clk,            // Internal
                         .Reset_A(Reset_SH | Clear),
                         .Reset_B(Reset_SH),
                         .Ld_A(Add),
-                        .Ld_B(ClA_LdB),
+                        .Ld_B(Clr_Ld),
                         .Shift_En,
                         .D_A(result[7:0]),
                         .D_B(SW),
