@@ -17,7 +17,7 @@ module multiplier (input logic  Clk,            // Internal
 	 logic Reset_SH, ClearA_LoadB_SH, Execute_SH;
 	 logic X, opA, M, Shift_En, Add, Sub, Clr_Ld, Clear;
 	 logic [7:0] A, B, SW_S;
-    logic [8:0] result;
+   logic [8:0] result;
 
 
 	 //We can use the "assign" statement to do simple combinational logic
@@ -33,7 +33,7 @@ module multiplier (input logic  Clk,            // Internal
                         .Ld_B(ClA_LdB),
                         .Shift_En,
                         .D_A(result[7:0]),
-                        .D_B(SW),
+                        .D_B(SW)
                         .A_In(X),
                         .B_In(opA),
                         .A_out(opA),
@@ -41,10 +41,10 @@ module multiplier (input logic  Clk,            // Internal
                         .A(A),
                         .B(B) );
 
-   sign_extend_adder    adder_unit(.Fn(Sub), .A , .B(SW), .s(result));
+  sign_extend_adder    ader_unit(.Fn(Sub), .A , .B(SW), .s(result));
 
 	control          control_unit (.Clk(Clk),
-                                  .Reset(Reset_SH),
+                                  .Reset_A(Reset_SH),
                                   .ClA_LdB(ClearA_LoadB_SH),
                                   .Execute(Execute_SH),
                                   .Shift_En,
@@ -53,9 +53,9 @@ module multiplier (input logic  Clk,            // Internal
                                   .Clr_Ld,
                                   .Clear);
 
-   xfp              x_Flip_Flop(.Clk(Clk),
+  xfp              x_Flip_Flop(.Clk(Clk),
                               .Load(Add),
-                              .Clear(Reset_SH | Clear),
+                              .Clear(Reset_SH | Clear)),
                               .D(result[8]),
                               .Q(X));
 
@@ -77,7 +77,7 @@ module multiplier (input logic  Clk,            // Internal
 	  //These are array module instantiations
 	  //Note: S stands for SYNCHRONIZED, H stands for active HIGH
 	  //Note: We can invert the levels inside the port assignments
-	  sync button_sync[2:0] (Clk, {~Reset, ~ClearA_LoadB, ~Execute}, {Reset_SH, ClearA_LoadB_SH, Execute_SH});
+	  sync button_sync[4:0] (Clk, {~Reset, ~ClearA_LoadB, ~Execute}, {Reset_SH, ClearA_LoadB_SH, Execute_SH});
 	  sync Din_sync[7:0] (Clk, SW, SW_S);
 
 endmodule

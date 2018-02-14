@@ -38,7 +38,7 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
         D1:    next_state = E;
         E :    next_state = E1;
         E1:    next_state = F;
-        F :    next_state = F1;
+        F :    next_state = F1
         F1:    next_state = G;
         G :    next_state = G1;
         G1:    next_state = H;
