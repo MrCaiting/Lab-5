@@ -1,4 +1,4 @@
-//Code for the control unit
+ //Code for the control unit
 //Two-always example for state machine
 
 module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
@@ -25,8 +25,8 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
 
       next_state  = curr_state;	//required because I haven't enumerated all possibilities below
       unique case (curr_state)
-        S :    if (~Execute)
-        next_state = Q;
+        S :    if (Execute)
+                next_state = Q;
         Q :    next_state = A;
         A :    next_state = A1;
         A1:    next_state = B;
@@ -48,7 +48,7 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
 
         // It can go back to the previous state only if the execute becomes low
         L :    if (~Execute)
-        next_state = S;
+                next_state = S;
 
       endcase
 
@@ -82,14 +82,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b0;
           end
-        A1: // Responsible for shifting the 1st bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
-          end
 
         B:  // Responsible for 2nd bit addition
           begin
@@ -101,14 +93,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
               Add = 1'b0;
             Sub = 1'b0;
             Shift_En = 1'b0;
-          end
-        B1: // Responsible for shifting the 2nd bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
           end
 
         C:  // Responsible for 3rd bit addition
@@ -122,14 +106,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b0;
           end
-        C1: // Responsible for shifting the 3rd bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
-          end
 
         D:  // Responsible for 4th bit addition
           begin
@@ -141,14 +117,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
               Add = 1'b0;
             Sub = 1'b0;
             Shift_En = 1'b0;
-          end
-        D1: // Responsible for shifting the 4th bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
           end
 
         E:  // Responsible for 5th bit addition
@@ -162,14 +130,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b0;
           end
-        E1: // Responsible for shifting the 5th bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
-          end
 
         F:  // Responsible for 6th bit addition
           begin
@@ -181,14 +141,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
               Add = 1'b0;
             Sub = 1'b0;
             Shift_En = 1'b0;
-          end
-        F1: // Responsible for shifting the 6th bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
           end
 
         G:  // Responsible for 7th bit addition
@@ -202,14 +154,6 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b0;
           end
-        G1: // Responsible for shifting the 7th bits
-          begin
-            Clr_Ld = 1'b0;
-            Clear = 1'b0;
-            Add = 1'b0;
-            Sub = 1'b0;
-            Shift_En = 1'b1;
-          end
 
         H:  // Responsible for 8th bit addition (if M is 1, we need to do subtraction)
           begin
@@ -222,7 +166,8 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Add = 1'b0;
             Shift_En = 1'b0;
           end
-        H1: // Responsible for shifting the 8th bits
+
+        default: // Responsible for shifting the bits
           begin
             Clr_Ld = 1'b0;
             Clear = 1'b0;
