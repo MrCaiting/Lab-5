@@ -5,14 +5,15 @@ timeunit 10ns;
 timeprecision 1ns;
 logic Clk = 0;
 logic Reset, ClearA_LoadB, Execute;
-logic [7:0] SW;
 logic X;
+logic [7:0] SW;
 logic [7:0] Aval,
-		 Bval;
+		 				Bval;
 logic [6:0] AhexL,
-		  AhexU,
-		  BhexL,
-		  BhexU;
+		  			AhexU,
+		  			BhexL,
+		  			BhexU;
+logic [15:0] sum;
 
 integer ErrorCnt = 0;
 
@@ -99,13 +100,13 @@ $display("-59*-7 Bval error ");
 end
 
 
-#32 SW = 8'b00000111;
+#2 SW = 8'b00000111;
 
 #2 ClearA_LoadB = 0;
 #2 ClearA_LoadB = 1;
 #2 SW = 8'b00111011;
 #2 Execute = 0; // our fourth computation 7*59
-#9 Execute =1;
+#40 Execute =1;
 
 if(Aval != 8'b00000001)
 begin
