@@ -175,6 +175,7 @@ module control (input  logic Clk, Reset, ClA_LdB, Execute, M,
             Sub = 1'b0;
             Shift_En = 1'b1;
           end
+          
         L:  // The last holding state before stepping into the new computation circle
           begin
             Clr_Ld = 1'b0;
