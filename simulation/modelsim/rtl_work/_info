@@ -7,293 +7,293 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/lab5/Lab-5/simulation/modelsim
+Z0 dE:/Lab-5/simulation/modelsim
 vcontrol
 Z1 DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
-Z2 !s110 1518599156
+Z2 !s110 1519018548
 !i10b 1
 !s100 WmT7MTo^50iAUM>MA_cla2
-IW@D]=4V?mYC5C3Ez`KH?g3
+I>`MH<G9EYU1e3VZ[gjSgM3
 Z3 V`JN@9S9cnhjKRR_L]QIcM3
 !s105 Control_sv_unit
 S1
 R0
 Z4 w1518595366
-8E:/lab5/Lab-5/Control.sv
-FE:/lab5/Lab-5/Control.sv
+8E:/Lab-5/Control.sv
+FE:/Lab-5/Control.sv
 L0 4
 Z5 OV;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1518599156.858000
-!s107 E:/lab5/Lab-5/Control.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/Control.sv|
+!s108 1519018548.131000
+!s107 E:/Lab-5/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/Control.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+E:/lab5/Lab-5
+Z7 !s92 -sv -work work +incdir+E:/Lab-5
 vfull_adder
 R1
-Z8 !s110 1518599157
+R2
 !i10b 1
 !s100 IeKKQS@bVMYi:U1I_hIf`0
-IBKoooS<TJJmXJX?[HW@2S3
+IWD8JO9mS4K0ZA[FBzP5eE3
 R3
-Z9 !s105 adder_sv_unit
+Z8 !s105 adder_sv_unit
 S1
 R0
 R4
-Z10 8E:/lab5/Lab-5/adder.sv
-Z11 FE:/lab5/Lab-5/adder.sv
+Z9 8E:/Lab-5/adder.sv
+Z10 FE:/Lab-5/adder.sv
 L0 31
 R5
 r1
 !s85 0
 31
-Z12 !s108 1518599157.014000
-Z13 !s107 E:/lab5/Lab-5/adder.sv|
-Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/adder.sv|
+Z11 !s108 1519018548.694000
+Z12 !s107 E:/Lab-5/adder.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/adder.sv|
 !i113 1
 R6
 R7
 vHexDriver
 R1
-R2
+Z14 !s110 1519018547
 !i10b 1
 !s100 [cL`Mj85NILUDFfo:J<1Y1
-Id06RG@_ZizI[;U_mLz2oV2
+I@BWEH_6L6:KZz<zK;bWMC3
 R3
 !s105 HexDriver_sv_unit
 S1
 R0
 R4
-8E:/lab5/Lab-5/HexDriver.sv
-FE:/lab5/Lab-5/HexDriver.sv
+8E:/Lab-5/HexDriver.sv
+FE:/Lab-5/HexDriver.sv
 L0 2
 R5
 r1
 !s85 0
 31
-!s108 1518599156.687000
-!s107 E:/lab5/Lab-5/HexDriver.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/HexDriver.sv|
+!s108 1519018547.925000
+!s107 E:/Lab-5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/HexDriver.sv|
 !i113 1
 R6
 R7
 n@hex@driver
 vmultiplier
 R1
-R8
+Z15 !s110 1519018550
 !i10b 1
 !s100 ?PBjC37;KmEBe0S^lB6<;3
-II<LZ>fJKToQVQekDPMQ=K3
+IZd[_@^Q4S81>Sa[814F>K3
 R3
 !s105 multiplier_sv_unit
 S1
 R0
 w1518598926
-8E:/lab5/Lab-5/multiplier.sv
-FE:/lab5/Lab-5/multiplier.sv
+8E:/Lab-5/multiplier.sv
+FE:/Lab-5/multiplier.sv
 L0 3
 R5
 r1
 !s85 0
 31
-!s108 1518599157.358000
-!s107 E:/lab5/Lab-5/multiplier.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/multiplier.sv|
+!s108 1519018550.095000
+!s107 E:/Lab-5/multiplier.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/multiplier.sv|
 !i113 1
 R6
 R7
 vreg_8
 R1
-R2
+R14
 !i10b 1
 !s100 WWdzR03@C^9b3oUm=RkLo0
-IEQJKk_1N8?<lfzUTzKjOk1
+IUb2ARd4UIFKZbh@1TGd]<2
 R3
 !s105 Reg_8_sv_unit
 S1
 R0
 R4
-8E:/lab5/Lab-5/Reg_8.sv
-FE:/lab5/Lab-5/Reg_8.sv
+8E:/Lab-5/Reg_8.sv
+FE:/Lab-5/Reg_8.sv
 L0 1
 R5
 r1
 !s85 0
 31
-!s108 1518599156.515000
-!s107 E:/lab5/Lab-5/Reg_8.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/Reg_8.sv|
+!s108 1519018547.736000
+!s107 E:/Lab-5/Reg_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/Reg_8.sv|
 !i113 1
 R6
 R7
 vregister_unit
 R1
-R8
+!s110 1519018549
 !i10b 1
 !s100 Pnj8J@OgCBS@d1<_WCbY@2
-IjRFjRS16^oH;`zZToPV5D0
+IkFGYWdCLMkhQP`3e@C>8;3
 R3
 !s105 Register_unit_sv_unit
 S1
 R0
 R4
-8E:/lab5/Lab-5/Register_unit.sv
-FE:/lab5/Lab-5/Register_unit.sv
+8E:/Lab-5/Register_unit.sv
+FE:/Lab-5/Register_unit.sv
 L0 2
 R5
 r1
 !s85 0
 31
-!s108 1518599157.186000
-!s107 E:/lab5/Lab-5/Register_unit.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/Register_unit.sv|
+!s108 1519018549.926000
+!s107 E:/Lab-5/Register_unit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/Register_unit.sv|
 !i113 1
 R6
 R7
 vsign_extend_adder
 R1
-R8
+R2
 !i10b 1
 !s100 =U<iM05[LVX1Ae]4k0L]R1
-I8;6K^@;nH7gh3<N=M:[nK2
+IMc3S31o8=Mm1]z0S?4@eM2
 R3
-R9
+R8
 S1
 R0
 R4
+R9
 R10
-R11
 L0 1
 R5
 r1
 !s85 0
 31
+R11
 R12
 R13
-R14
 !i113 1
 R6
 R7
 vsync
 R1
-R2
+R14
 !i10b 1
 !s100 FloJaUP>]UNPcBERTmfU13
-I:UY:ABf`C0YYhYJAUeUR12
+I2=jI=RNDWM?9A9m_1nb_P2
 R3
-Z15 !s105 Synchronizers_sv_unit
+Z16 !s105 Synchronizers_sv_unit
 S1
 R0
 R4
-Z16 8E:/lab5/Lab-5/Synchronizers.sv
-Z17 FE:/lab5/Lab-5/Synchronizers.sv
+Z17 8E:/Lab-5/Synchronizers.sv
+Z18 FE:/Lab-5/Synchronizers.sv
 L0 4
 R5
 r1
 !s85 0
 31
-Z18 !s108 1518599156.281000
-Z19 !s107 E:/lab5/Lab-5/Synchronizers.sv|
-Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/Synchronizers.sv|
+Z19 !s108 1519018547.547000
+Z20 !s107 E:/Lab-5/Synchronizers.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/Synchronizers.sv|
 !i113 1
 R6
 R7
 vsync_r0
 R1
-R2
+R14
 !i10b 1
 !s100 QY6]=X?VaL]0ijJZ46B:40
-IlkCh03FGBI<AMlM`L^kS23
+I4?X_oC3=kgPVNZS0DmH2O3
 R3
-R15
+R16
 S1
 R0
 R4
-R16
 R17
+R18
 L0 18
 R5
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !i113 1
 R6
 R7
 vsync_r1
 R1
-R2
+R14
 !i10b 1
 !s100 9dOQbTVGG6oj0DT9goc970
-IGZLd0>TMHif2FhlXz6fLZ1
+II?FmOUHBmz9KFdCeL3c_V3
 R3
-R15
+R16
 S1
 R0
 R4
-R16
 R17
+R18
 L0 39
 R5
 r1
 !s85 0
 31
-R18
 R19
 R20
+R21
 !i113 1
 R6
 R7
 vtestbench
 R1
-R8
+R15
 !i10b 1
 !s100 BLY[K2L]O?7MEimiEgIQf1
-IA2c8;:Jj_2PzRe9fG3nbM3
+IeD57`LXPi9QOU48VX9Bkn2
 R3
 !s105 testbemch_sv_unit
 S1
 R0
 w1518599132
-8E:/lab5/Lab-5/testbemch.sv
-FE:/lab5/Lab-5/testbemch.sv
+8E:/Lab-5/testbemch.sv
+FE:/Lab-5/testbemch.sv
 L0 1
 R5
 r1
 !s85 0
 31
-!s108 1518599157.529000
-!s107 E:/lab5/Lab-5/testbemch.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/testbemch.sv|
+!s108 1519018550.372000
+!s107 E:/Lab-5/testbemch.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/testbemch.sv|
 !i113 1
 R6
 R7
 vxfp
 R1
-R2
+R14
 !i10b 1
 !s100 jYkRG9j?iN>0h9oNDj[U]3
-IUTYN1K0nESHVlQIkYPf^Q0
+I5aO96U]aBZNc6AeMWY<Vn3
 R3
 !s105 xfp_sv_unit
 S1
 R0
 w1518595370
-8E:/lab5/Lab-5/xfp.sv
-FE:/lab5/Lab-5/xfp.sv
+8E:/Lab-5/xfp.sv
+FE:/Lab-5/xfp.sv
 L0 1
 R5
 r1
 !s85 0
 31
-!s108 1518599156.032000
-!s107 E:/lab5/Lab-5/xfp.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/lab5/Lab-5|E:/lab5/Lab-5/xfp.sv|
+!s108 1519018547.076000
+!s107 E:/Lab-5/xfp.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/Lab-5|E:/Lab-5/xfp.sv|
 !i113 1
 R6
 R7

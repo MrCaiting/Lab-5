@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Multiplier
-Wed Feb 14 03:05:47 2018
-Quartus II 64-Bit Version 15.0.2 Build 153 07/15/2015 SJ Full Version
+Mon Feb 19 00:53:19 2018
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
 
 
 ---------------------
@@ -53,24 +53,24 @@ agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb 14 03:05:47 2018       ;
-; Quartus II 64-Bit Version          ; 15.0.2 Build 153 07/15/2015 SJ Full Version ;
-; Revision Name                      ; Multiplier                                  ;
-; Top-level Entity Name              ; multiplier                                  ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 93                                          ;
-;     Total combinational functions  ; 93                                          ;
-;     Dedicated logic registers      ; 39                                          ;
-; Total registers                    ; 39                                          ;
-; Total pins                         ; 73                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Feb 19 00:53:19 2018      ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2015 SJ Web Edition ;
+; Revision Name                      ; Multiplier                                 ;
+; Top-level Entity Name              ; multiplier                                 ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 93                                         ;
+;     Total combinational functions  ; 93                                         ;
+;     Dedicated logic registers      ; 39                                         ;
+; Total registers                    ; 39                                         ;
+; Total pins                         ; 73                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -160,37 +160,39 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
+Parallel compilation attempted to use more processors than were available, which may cause increased compilation time. For lowest compilation time, correct your settings.
 +------------------------------------------+
 ; Parallel Compilation                     ;
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
+;     Processor 2            ; < 0.1%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                       ;
-+----------------------------------+-----------------+------------------------------+--------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path   ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------+---------+
-; xfp.sv                           ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/xfp.sv           ;         ;
-; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/Synchronizers.sv ;         ;
-; Register_unit.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/Register_unit.sv ;         ;
-; Reg_8.sv                         ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/Reg_8.sv         ;         ;
-; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/multiplier.sv    ;         ;
-; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/HexDriver.sv     ;         ;
-; Control.sv                       ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/Control.sv       ;         ;
-; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; E:/lab5/Lab-5/adder.sv         ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                     ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
+; xfp.sv                           ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/xfp.sv              ;         ;
+; Synchronizers.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/Synchronizers.sv    ;         ;
+; Register_unit.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/Register_unit.sv    ;         ;
+; Reg_8.sv                         ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/Reg_8.sv            ;         ;
+; multiplier.sv                    ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/multiplier.sv       ;         ;
+; HexDriver.sv                     ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/HexDriver.sv        ;         ;
+; Control.sv                       ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/Control.sv          ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; E:/Lab-5/adder.sv            ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -446,7 +448,7 @@ Encoding Type:  One-Hot
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -455,10 +457,11 @@ Encoding Type:  One-Hot
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 15.0.2 Build 153 07/15/2015 SJ Full Version
-    Info: Processing started: Wed Feb 14 03:05:35 2018
+    Info: Version 15.0.0 Build 145 04/22/2015 SJ Web Edition
+    Info: Processing started: Mon Feb 19 00:50:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Multiplier -c Multiplier
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (20032): Parallel compilation is enabled and will use up to 8 processors
+Warning (20031): Parallel compilation is enabled for 8 processors, but there are only 2 processors in the system. Runtime may increase due to over usage of the processor space.
 Info (12021): Found 1 design units, including 1 entities, in source file testbemch.sv
     Info (12023): Found entity 1: testbench
 Info (12021): Found 1 design units, including 1 entities, in source file xfp.sv
@@ -493,23 +496,23 @@ Info (12128): Elaborating entity "HexDriver" for hierarchy "HexDriver:HexAL"
 Info (12128): Elaborating entity "sync" for hierarchy "sync:button_sync[0]"
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 19 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file E:/lab5/Lab-5/output_files/Multiplier.map.smsg
+Info (144001): Generated suppressed messages file E:/Lab-5/output_files/Multiplier.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 166 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 61 output pins
     Info (21061): Implemented 93 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 692 megabytes
-    Info: Processing ended: Wed Feb 14 03:05:47 2018
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 799 megabytes
+    Info: Processing ended: Mon Feb 19 00:53:20 2018
+    Info: Elapsed time: 00:03:05
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in E:/lab5/Lab-5/output_files/Multiplier.map.smsg.
+The suppressed messages can be found in E:/Lab-5/output_files/Multiplier.map.smsg.
 
 
